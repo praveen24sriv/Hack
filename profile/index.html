@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Setup</h1>
+        <form action="#" method="POST" id="profile-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="designation">Designation</label>
+                <input type="text" id="designation" name="designation" placeholder="Enter your designation" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="commuteFrom">Commute From</label>
+                <input type="text" id="commuteFrom" name="commuteFrom" placeholder="Enter your commute from location" required>
+            </div>
+            <div class="form-group">
+                <label for="commuteTo">Commute To</label>
+                <input type="text" id="commuteTo" name="commuteTo" placeholder="Enter your commute to location" required>
+            </div>
+            <div class="form-group">
+                <label for="pickupTime">Pickup Time</label>
+                <input type="time" id="pickupTime" name="pickupTime" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
