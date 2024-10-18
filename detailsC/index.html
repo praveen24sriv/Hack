@@ -31,3 +31,44 @@
     </div>
 </body>
 </html>
+
+
+___JSX FILE____
+
+
+<>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commuting details</title>
+  <link rel="stylesheet" href="style.css" />
+  <div className="details-container">
+    <h1>Enter Ride Details</h1>
+    <form action="submit-ride-details" method="POST">
+      <div className="form-group">
+        <label htmlFor="source">Source Point:</label>
+        <input
+          type="text"
+          id="source"
+          name="source"
+          placeholder="Enter your starting location"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="destination">Destination:</label>
+        <input
+          type="text"
+          id="destination"
+          name="destination"
+          placeholder="Enter your destination"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" name="pickup-time" required="" />
+      </div>
+      <button type="submit">Submit Ride Details</button>
+    </form>
+  </div>
+</>
