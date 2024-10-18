@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="details-container">
+        <h1>Enter Ride Details</h1>
+        <form action="submit-ride-details" method="POST">
+            <div class="form-group">
+                <label for="source">Source Point:</label>
+                <input type="text" id="source" name="source" placeholder="Enter your starting location" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup-time">Pickup Time:</label>
+                <input type="time" id="pickup-time" name="pickup-time" required>
+            </div>
+
+        
+            <div class="form-group">
+                <label for="seats-available">Seats Available (for Drivers):</label>
+                <input type="number" id="seats-available" name="seats-available" min="1" max="10" placeholder="Enter available seats">
+            </div>
+
+            <button type="submit">Submit Ride Details</button>
+        </form>
+    </div>
+</body>
+</html>
