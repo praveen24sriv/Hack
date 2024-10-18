@@ -36,3 +36,64 @@
     </div>
 </body>
 </html>
+
+________JSX FILE ________
+
+<>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="style.css" />
+  <div className="container">
+    <h1>Profile Setup</h1>
+    <form action="#" method="POST" id="profile-form">
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="designation">Designation</label>
+        <input
+          type="text"
+          id="designation"
+          name="designation"
+          placeholder="Enter your designation"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="commuteFrom">Commute From</label>
+        <input
+          type="text"
+          id="commuteFrom"
+          name="commuteFrom"
+          placeholder="Enter your commute from location"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="commuteTo">Commute To</label>
+        <input
+          type="text"
+          id="commuteTo"
+          name="commuteTo"
+          placeholder="Enter your commute to location"
+          required=""
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="pickupTime">Pickup Time</label>
+        <input type="time" id="pickupTime" name="pickupTime" required="" />
+      </div>
+      <button type="submit" className="submit-btn">
+        Submit
+      </button>
+    </form>
+  </div>
+</>
