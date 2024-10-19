@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('carpool-background.jpg');
-    /* Replace with a relevant image */
     background-size: cover;
     background-position: center;
 }
